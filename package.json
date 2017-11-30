@@ -2,13 +2,14 @@
   "name": "spotcall",
   "version": "1.0.0",
   "description": "App for telling your friends when you enter a location of your choice",
-  "main": "import_database.js",
+  "main": "",
   "dependencies": {
+    "csvtojson": "^1.1.9",
     "nedb": "^1.8.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dump_db": "node scripts/import_database.js"
   },
   "author": "",
   "license": "ISC"
