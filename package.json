@@ -2,7 +2,7 @@
   "name": "spotcall",
   "version": "1.0.0",
   "description": "App for telling your friends when you enter a location of your choice",
-  "main": "",
+  "main": "server.js",
   "dependencies": {
     "csvtojson": "^1.1.9",
     "nedb": "^1.8.0"
