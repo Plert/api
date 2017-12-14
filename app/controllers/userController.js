@@ -3,6 +3,20 @@
 var mongoose = require('mongoose'),
   User = mongoose.model('Users');
 
+exports.authenticate = function(req,res) {
+  // fetch user and test password verification
+  console.log(req.body);
+  User.findOne({ email: req.body.email }, function(err, user) {
+    if (err) throw err;
+
+    // Compare password
+    user.comparePassword(req.body.password, function(err, isMatch) {
+        if (err) throw err;
+        res.json({status: isMatch});
+    });
+  });
+};
+
 exports.list_all_users = function(req, res) {
   User.find({}, function(err, users) {
     if (err)

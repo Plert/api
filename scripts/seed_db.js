@@ -26,15 +26,18 @@ var data = [
        'documents': [
            {
                'name': 'Eduardo',
-               'email': 'eduardo@eduardo.com'
+               'email': 'eduardo@eduardo.com',
+               'password': '12345'
            },
            {
                'name': 'Mike',
-               'email': 'mike@mike.com'
+               'email': 'mike@mike.com',
+               'password': '12345'
            },
            {
                'name': 'Melody',
-               'email': 'melody@melody.com'
+               'email': 'melody@melody.com',
+               'password': '12345'
            }
        ]
    }

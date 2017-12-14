@@ -4,6 +4,7 @@
   "description": "Plert(Place Alert):App for telling your friends when you enter a location of your choice",
   "main": "server.js",
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "csvtojson": "^1.1.9",
     "express": "^4.16.2",
     "mongoose": "^4.13.7"
