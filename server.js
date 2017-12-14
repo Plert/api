@@ -8,7 +8,7 @@ User = require('./app/models/userModel'); //created model loading here
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Plertdb'); 
+mongoose.connect('mongodb://localhost/Plertdb',{useMongoClient:true}); 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

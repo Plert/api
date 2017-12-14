@@ -1,6 +1,4 @@
-## Description
-Plert (Place alert)
-
+## Plert (Place alert) API
 App for alerting groups when you arrive a location
 
 ## Development Set Up
@@ -23,7 +21,6 @@ npm run dump_db
 ```
 npm run start
 ```
-
 
 ## Things to Know
 
