@@ -15,6 +15,14 @@ mongod
 ```
 
 3. Create database with seed
+```
+npm run dump_db
+```
+
+4. Start server
+```
+npm run start
+```
 
 
 ## Things to Know

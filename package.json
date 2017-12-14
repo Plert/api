@@ -9,10 +9,11 @@
     "mongoose": "^4.13.7"
   },
   "devDependencies": {
+    "mongoose-seed": "^0.4.0",
     "nodemon": "^1.12.7"
   },
   "scripts": {
-    "dump_db": "node scripts/import_users.js;node scripts/import_items.js",
+    "dump_db": "node scripts/seed_db.js;",
     "start": "nodemon server.js"
   },
   "author": "",

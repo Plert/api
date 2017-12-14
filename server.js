@@ -4,7 +4,7 @@ port = process.env.PORT || 3000,
 mongoose = require('mongoose'),
 bodyParser = require('body-parser'),
 // Models
-User = require('./api/models/userModel'); //created model loading here
+User = require('./app/models/userModel'); //created model loading here
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Routes
-var routes = require('./api/routes/userRoutes'); //importing user routes
+var routes = require('./app/routes/userRoutes'); //importing user routes
 routes(app); //register the route
 
 // Start server
