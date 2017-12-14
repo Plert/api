@@ -1,3 +1,0 @@
-{"id":"1","name":"Eduardo","email":"test@eduardo.com","password":"12345","created_dt":"","updated_dt":"","_id":"9MZ0sW9MvUrvyxod"}
-{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"id":"2","name":"Eduardo2","email":"test2@eduardo.com","password":"12345","created_dt":"","updated_dt":"","_id":"SHx3EcQ53hHg7qlj"}
