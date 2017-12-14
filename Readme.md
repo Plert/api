@@ -1,19 +1,20 @@
 ## Description
+Plert (Place alert)
 
-## How to run
+App for alerting groups when you arrive a location
+
+## Development Set Up
 1. Install Dependencies
 ```
 npm install
 ```
 
-2. Run database with seed
-This will create your seed database in folder db/. Database is in Nedb 
+2. Start mongo db instance(local)
 ```
-npm run-script dump_db
+mongod
 ```
-After running you should have the following files inside db folder:
-- ItemInfo.db
-- users.db
+
+3. Create database with seed
 
 
 ## Things to Know
