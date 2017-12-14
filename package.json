@@ -1,15 +1,19 @@
 {
-  "name": "spotcall",
+  "name": "plert",
   "version": "1.0.0",
-  "description": "App for telling your friends when you enter a location of your choice",
+  "description": "Plert(Place Alert):App for telling your friends when you enter a location of your choice",
   "main": "server.js",
   "dependencies": {
     "csvtojson": "^1.1.9",
-    "nedb": "^1.8.0"
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.12.7"
+  },
   "scripts": {
-    "dump_db": "node scripts/import_users.js;node scripts/import_items.js"
+    "dump_db": "node scripts/import_users.js;node scripts/import_items.js",
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC"

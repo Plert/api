@@ -1,27 +1,7 @@
-var http = require('http');
-var url = require('url');
-var UserDb = require('./ItemData.js');
+var express = require('express'),
+app = express(),
+port = process.env.PORT || 3000;
 
-http.createServer(function (req, res) {
-  var myItemDb = new ItemDb();
+app.listen(port);
 
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-
-  var q = url.parse(req.url, true);
-
-  if (q.pathname == '/list') {
-    if (typeof q.query.itemId === 'undefined') {
-      for (var i=0; i<myItemDb.length(); i++) {
-        res.write(myItemDb.message(myItemDb.get(i)) + '\n');
-      }
-    }
-    else {
-      res.write(myItemDb.find(q.query.itemId) + '\n');
-    }
-  }
-  else {
-     res.write('ERR\n');
-  }
-
-  res.end();
-}).listen(8080);
+console.log('Plert RESTful API server started on: ' + port);
