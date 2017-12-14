@@ -3,20 +3,20 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var UserSchema = new Schema({
+var LocationSchema = new Schema({
   name: {
     type: String,
     required: 'Kindly enter your name'
   },
-  email: {
-    type: String,
-    required: 'Please enter your email'
+  long: {
+    type: Number,
+    required: 'Please enter your'
   },
-  password: {
-    type: String,
-    required: true
+  lat:{
+    type: Number,
+    required: 'Latitude of the place'
   },
-  created_date: {
+  Created_date: {
     type: Date,
     default: Date.now
   }
