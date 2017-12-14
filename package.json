@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dump_db": "node scripts/import_database.js"
+    "dump_db": "node scripts/import_users.js;node scripts/import_items.js"
   },
   "author": "",
   "license": "ISC"
