@@ -1,5 +1,5 @@
 
-## ![alt text](assets/logo.png=50"Plert")Plert (Place alert) API
+## ![alt text](assets/logo.png=100"Plert")Plert (Place alert) API
 App for alerting groups when you arrive a location
 
 ## Development Set Up
